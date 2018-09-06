@@ -3,18 +3,18 @@ import './App.css';
 import Game from './Game'
 import './Stars.css';
 import Rules from './Rules';
-import { Route} from "react-router-dom";
+import { Route,HashRouter} from "react-router-dom";
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-     
-
-        <Route path="/yyuuttoonngg.github.io/colorball5o/rules" render={() => <Rules />} />
-        <Route path="/" render={() => <Game />} />
-      </div>
+      <HashRouter>
+        <div className="App">
+          <Route path="/rules" component={Rules} />
+          <Route exact path="/" component={Game} />
+        </div>
+      </HashRouter>
     );
   }
 }

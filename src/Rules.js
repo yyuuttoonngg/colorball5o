@@ -1,8 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Rules() {
   return (
     <div>
+      <div className="restart" id="rules">
+        <Link to="/">Back to game!</Link>
+      </div>
       <h3>Color-5-O Rules</h3>
       <p>Line up balls with the same color - line can be vertical, horizontal or diagonal!</p>
       <p>To move, click the ball to select, then click an empty square. If there is a clear path, you can move it!</p>
@@ -20,9 +24,7 @@ export default function Rules() {
           <li>10 balls - 60 points</li>
         </ul>
       </div>
-      <div className="restart" id="rules">
-        <a href="/">Back to game !</a>
-      </div>
+
     </div>
   );
 }

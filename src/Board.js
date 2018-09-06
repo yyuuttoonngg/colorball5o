@@ -1,5 +1,6 @@
 import React from 'react';
 import Square from './Square';
+import {Link} from "react-router-dom";
 
 export default class Board extends React.Component {
   constructor(props) {
@@ -343,12 +344,14 @@ export default class Board extends React.Component {
 
     return (
       <div>
+        <div className="restart" id="rules">
+        <Link to="/rules">Show me the rules !</Link>  
+        </div>
         <div className="title">COLOR - 5 -  O</div>
         {rows}
         <div><span className="left">Your score: {this.state.score}</span> <span className="right">Record: {this.state.highestScore}</span></div>
         {gameOver?<div className="gameover">Game Over <div className ="restart" onClick={() => this.restartGame()}>Play Again</div></div>:''}
-        <div className="restart" id="rules">
-        <a href="/rules">show me the rules !</a></div>  
+
       </div>
       
     );

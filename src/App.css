@@ -138,9 +138,9 @@ body {
   color:inherit;
 }
 #rules{
-  position: absolute;
-  bottom: 10%;
-  width: 150px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  width: 130px;
   text-align: center;
   background-color: rgba(153, 130, 130 ,0.3);
 }
