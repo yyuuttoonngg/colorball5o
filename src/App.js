@@ -12,7 +12,7 @@ class App extends Component {
       <div className="App">
      
 
-        <Route path="/rules" render={() => <Rules />} />
+        <Route path="/yyuuttoonngg.github.io/colorball5o/rules" render={() => <Rules />} />
         <Route path="/" render={() => <Game />} />
       </div>
     );
