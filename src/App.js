@@ -11,8 +11,9 @@ class App extends Component {
     return (
       <div className="App">
      
-        <Route exact path="/" render={() => <Game />} />
-            <Route path="/rules" render={() => <Rules />} />
+
+        <Route path="/rules" render={() => <Rules />} />
+        <Route path="/" render={() => <Game />} />
       </div>
     );
   }
